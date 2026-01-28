@@ -31,7 +31,6 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
     LoadConversations event,
     Emitter<ChatState> emit,
   ) {
-    emit(state.copyWith(conversations: const ItemFetcher.loading()));
     _conversationSubscription = _chatRepository.watchConversations().listen(
       (chats) => add(
         ConversationsListUpdated(chats),
@@ -67,12 +66,17 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
     Emitter<ChatState> emit,
   ) {
     add(const SeedChatData());
+    emit(
+      state.copyWith(
+        conversations: const ItemFetcher.loading(),
+        contacts: const ItemFetcher.loading(),
+      ),
+    );
     add(const LoadConversations());
     add(const LoadContacts());
   }
 
   FutureOr<void> _onLoadContacts(LoadContacts event, Emitter<ChatState> emit) {
-    emit(state.copyWith(contacts: const ItemFetcher.loading()));
     _contactSubscription = _chatRepository.watchContacts().listen(
       (contacts) => add(
         ContactsListUpdated(contacts),

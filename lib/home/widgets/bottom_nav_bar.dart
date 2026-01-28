@@ -23,7 +23,7 @@ class BottomNavBar extends StatelessWidget {
       child: Theme(
         data: Theme.of(context).copyWith(
           iconTheme: const IconThemeData(
-            color: AppColors.nickel,
+            color: AppColors.textMuted,
             size: 20,
           ),
         ),

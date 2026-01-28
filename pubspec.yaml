@@ -30,9 +30,18 @@ dev_dependencies:
   drift_dev: ^2.30.1
   flutter_test:
     sdk: flutter
+  flutter_test_goldens: ^0.0.7
   mocktail: ^1.0.4
+  mocktail_image_network: ^1.2.0
   very_good_analysis: ^10.0.0
 
 flutter:
   generate: true
   uses-material-design: true
+  assets:
+    - assets/fonts/
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf

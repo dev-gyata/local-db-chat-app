@@ -13,7 +13,7 @@ class MessageModel extends Equatable {
     return MessageModel(
       id: 1,
       content: 'Hello',
-      timestamp: DateTime.now(),
+      timestamp: DateTime(2025),
       senderId: 1,
       hasReadMessage: false,
     );

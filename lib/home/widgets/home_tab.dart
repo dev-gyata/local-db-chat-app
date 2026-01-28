@@ -40,13 +40,13 @@ class _HomeTabState extends State<HomeTab> {
             color: AppColors.white,
             boxShadow: const [
               BoxShadow(
-                color: AppColors.shadow,
+                color: AppColors.borderLight,
                 blurRadius: 4,
                 offset: Offset(0, 2),
               ),
             ],
             border: Border.all(
-              color: AppColors.borderColor,
+              color: AppColors.divider,
               width: .8,
             ),
           ),
@@ -76,7 +76,7 @@ class _HomeTabState extends State<HomeTab> {
                             ),
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
-                              color: isSelected ? AppColors.green2 : null,
+                              color: isSelected ? AppColors.darkTeal : null,
                             ),
                             child: Center(
                               child: Text(
