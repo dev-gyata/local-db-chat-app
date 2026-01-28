@@ -3,13 +3,13 @@
 
 import 'package:flutter_test/flutter_test.dart';
 import 'package:local_db_chat_app/app/app.dart';
-import 'package:local_db_chat_app/counter/counter.dart';
+import 'package:local_db_chat_app/chat/chat.dart';
 
 void main() {
   group('App', () {
-    testWidgets('renders CounterPage', (tester) async {
+    testWidgets('renders ChatPage', (tester) async {
       await tester.pumpWidget(App());
-      expect(find.byType(CounterPage), findsOneWidget);
+      expect(find.byType(ChatPage), findsOneWidget);
     });
   });
 }

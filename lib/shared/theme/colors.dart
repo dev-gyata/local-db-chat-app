@@ -9,4 +9,8 @@ abstract class AppColors {
   static const Color nickel = Color(0xFF727175);
   static const Color white = Color(0xFFffffff);
   static const Color borderColor = Color(0xFFd7d7d7);
+  static const Color scaffoldBackground = Color(0xFFECE5DD);
+  static const Color dateChipBackground = Color(0xFFE1F4F3);
+  static const Color messageBubbleBackground = Color(0xFFDCF8C6);
+  static const Color blue = Color(0xFF007AFF);
 }
