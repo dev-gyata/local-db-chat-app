@@ -2,8 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:local_db_chat_app/shared/shared.dart';
 
 class ImageAvatar extends StatelessWidget {
-  const ImageAvatar({this.radius = 24, super.key});
+  const ImageAvatar({
+    this.radius = 24,
+    super.key,
+    this.imageUrl = AppConstants.imageUrl,
+  });
   final double radius;
+  final String imageUrl;
 
   @override
   Widget build(BuildContext context) {
@@ -13,9 +18,9 @@ class ImageAvatar extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppColors.ufoGreen,
         shape: BoxShape.circle,
-        image: const DecorationImage(
+        image: DecorationImage(
           image: NetworkImage(
-            AppConstants.imageUrl,
+            imageUrl,
           ),
           fit: BoxFit.cover,
         ),

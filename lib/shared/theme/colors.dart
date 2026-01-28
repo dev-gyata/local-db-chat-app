@@ -12,4 +12,5 @@ abstract class AppColors {
   static const Color scaffoldBackground = Color(0xFFECE5DD);
   static const Color dateChipBackground = Color(0xFFE1F4F3);
   static const Color messageBubbleBackground = Color(0xFFDCF8C6);
+  static const Color blue = Color(0xFF007AFF);
 }
