@@ -48,7 +48,7 @@ class ChatListItem {
 
 @DriftDatabase(tables: [Users, Rooms, Messages])
 class LocalDb extends _$LocalDb {
-  LocalDb() : super(_openConnection());
+  LocalDb({QueryExecutor? executor}) : super(executor ?? _openConnection());
 
   @override
   int get schemaVersion => 1;
