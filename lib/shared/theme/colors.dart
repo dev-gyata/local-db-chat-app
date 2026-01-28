@@ -3,14 +3,10 @@ import 'dart:ui';
 abstract class AppColors {
   static const Color primary = Color(0xFF0e261c);
   static const Color ufoGreen = Color(0xFF33cf65);
-  static const Color green2 = Color(0xFF00534b);
-  static const Color shadow = Color(0xFFebebeb);
-  static const Color lightGrey = Color(0xFFd6d6d6);
-  static const Color nickel = Color(0xFF727175);
+  static const Color darkTeal = Color(0xFF00534b);
+  static const Color borderLight = Color(0xFFebebeb);
+  static const Color textMuted = Color(0xFF727175);
   static const Color white = Color(0xFFffffff);
-  static const Color borderColor = Color(0xFFd7d7d7);
-  static const Color scaffoldBackground = Color(0xFFECE5DD);
-  static const Color dateChipBackground = Color(0xFFE1F4F3);
-  static const Color messageBubbleBackground = Color(0xFFDCF8C6);
+  static const Color divider = Color(0xFFd7d7d7);
   static const Color blue = Color(0xFF007AFF);
 }

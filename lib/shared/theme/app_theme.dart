@@ -7,7 +7,7 @@ abstract class AppTheme {
     appBarTheme: const AppBarTheme(
       backgroundColor: AppColors.primary,
     ),
-    dividerColor: AppColors.borderColor,
+    dividerColor: AppColors.divider,
     primaryColor: AppColors.primary,
     textTheme: GoogleFonts.robotoTextTheme(),
     useMaterial3: true,

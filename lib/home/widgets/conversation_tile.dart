@@ -37,7 +37,10 @@ class ConversationTile extends StatelessWidget {
                   conversation.lastMessage?.content ?? '',
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
-                  style: const TextStyle(color: AppColors.nickel, fontSize: 12),
+                  style: const TextStyle(
+                    color: AppColors.textMuted,
+                    fontSize: 12,
+                  ),
                 ),
               ],
             ),
@@ -73,7 +76,7 @@ class ConversationTile extends StatelessWidget {
                       const Icon(Icons.done_all, color: AppColors.blue),
                     false => const Icon(
                       Icons.check,
-                      color: AppColors.nickel,
+                      color: AppColors.textMuted,
                     ),
                     _ => const SizedBox.shrink(),
                   };
