@@ -6,6 +6,7 @@ import 'package:local_db_chat_app/home/repository/chat_repository_impl.dart';
 import 'package:local_db_chat_app/home/widgets/bottom_nav_bar.dart';
 import 'package:local_db_chat_app/home/widgets/contacts.dart';
 import 'package:local_db_chat_app/home/widgets/home_tab.dart';
+import 'package:local_db_chat_app/home/widgets/whatsapp_label.dart';
 import 'package:local_db_chat_app/shared/db/local_db.dart';
 import 'package:local_db_chat_app/shared/shared.dart';
 
@@ -40,7 +41,7 @@ class HomeView extends StatelessWidget {
             Column(
               spacing: 20,
               children: [
-                const SizedBox(height: 10),
+                const WhatsappLabel(),
                 const Contacts(),
                 Expanded(
                   child: Container(
