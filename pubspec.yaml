@@ -33,7 +33,7 @@ dev_dependencies:
   flutter_test_goldens: ^0.0.7
   mocktail: ^1.0.4
   mocktail_image_network: ^1.2.0
-  very_good_analysis: ^10.0.0
+  very_good_analysis: ^10.1.0
 
 flutter:
   generate: true
