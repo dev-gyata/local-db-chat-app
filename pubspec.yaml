@@ -10,7 +10,7 @@ environment:
 dependencies:
   bloc: ^9.0.1
   collection: ^1.19.1
-  drift: ^2.30.1
+  drift: ^2.31.0
   drift_flutter: ^0.2.8
   equatable: ^2.0.8
   flutter:
